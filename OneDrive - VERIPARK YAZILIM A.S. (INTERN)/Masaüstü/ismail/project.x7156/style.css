@@ -1,0 +1,289 @@
+﻿/*Html*/
+:root {
+    --primary-color: #d1f0e8;
+    --secondary-color: #01011c;
+}
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto hidden;
+    padding: 0 40px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1,h2 {
+    font-weight: 300;
+    line-height:1.2;
+    margin: 10px 0;
+}
+p {
+    margin: 10px 0px;
+}
+img {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-gap:20px;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid2{
+    grid-column: 1fr;
+    justify-self: flex-start;
+}
+.flexblog{
+    justify-self: flex-start;
+} 
+
+
+/*Header*/
+.navbar{
+    background-color: cadetblue;
+    color: black;
+    height:70px;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+.navbar ul {
+    display:flex;
+}
+.navbar a{
+    color: black;
+    padding:5px;
+    margin: 0 5px;
+}
+.navbar a:hover {
+    border-bottom: 7px solid black;
+}
+
+
+/*Contact Us*/
+.informationform {
+    height: 500px;
+    color: var(--primary-color);
+    position: relative;
+    padding-top: 30px;
+}
+.informationform .grid {
+    overflow: visible;
+    grid-template-columns: 1fr 1fr;
+}
+.informationform-form {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+.card {
+    background-color: #01011c;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.card1 {
+    background-color: floralwhite;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.informationform-form1 {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    padding: 30px;
+    justify-self: flex-end;
+}
+.informationform h1 {
+    font-size: 40px;
+    color: black;
+}
+.informationform p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+.informationform-form .form-control{
+    margin: 12px;
+}
+input {
+    background-color: #c0eef0;
+    border:none;
+    border-radius: 10px;
+}
+.informationform-form input[type='text'],
+.informationform-form input[type='email'] {
+        width: 49%;
+        padding: 10px 13px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+}
+.informationform-form input:focus {
+    outline: none;
+}
+input::placeholder
+{
+    color: black;
+}
+textarea {
+    background-color: #c0eef0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow',  sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding:10px 10px;
+    height:100px;
+    width: 93%;
+}
+textarea:focus {
+    outline: none;        
+}
+textarea::placeholder{
+    color:black;
+}
+.btn {
+    display: inline-block;
+    padding: 0px 30px;
+    cursor: pointer;
+    background-color:#DD928A;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right:15px;
+}
+.btn:hover{
+    transform:scale(0.98);
+}
+
+
+
+
+/*Icons*/
+.icons .card{
+    margin: 40px 10px;
+}
+.icons .flex{
+    flex-wrap: wrap;
+}
+.icons .card:hover{
+    transform: translateY(-20px);
+}
+
+
+
+
+/*Aboutus*/
+.aboutus{
+    padding: 50px 10px;
+    text-align:left;
+}
+.aboutus img{
+    background: cover;
+}
+
+
+/*Blog Section*/
+.blog{
+    margin: 30px 20px;
+}
+.card-blog {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 10px;
+    margin: 20px 10px;
+  }
+
+/*Footer*/
+footer{
+    background-color: cadetblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablets and under*/
+
+@media(max-width: 768px){
+    .grid, .informationform .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .informationform{
+        height: auto;
+    } 
+    .informationform-form{
+        justify-self: csenter;
+        margin: auto;
+    } 
+    .informationform-form1{
+        justify-self: center;
+        margin: auto;
+    } 
+    .icons .card{
+        margin: 20px 5px;
+    }
+}
+
+/*Mobile*/
+
+@media(max-width: 500px){
+    .navbar{
+        height: 110px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .icons .card{
+        margin: 20px 5px;
+    }
+}
