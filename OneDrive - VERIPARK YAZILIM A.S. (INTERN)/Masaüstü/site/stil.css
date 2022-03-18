@@ -1,0 +1,54 @@
+@charset "utf-8"
+
+	.{
+		
+	}
+	.projemiz{
+		color:#F00; padding-bottom:45px; font-style:italic; display:block;
+	}
+	.yazilar{
+		color:#F00; font-size:18px; padding-top:20px;
+	}	
+	.fotograf{
+		margin-right:10px; size:auto;
+	}
+	.projehakkinda{
+		font-size:24px; color: #F00; font-style:italic; padding-top:45px; display:block;
+	}
+	.projealtbilgi{
+		font-size:24px; color: #F00; font-style:italic; padding-top:45px; display:block;
+	}
+	.table6altı{
+		color:#FFF;
+		background-color:#000;
+		display:block;
+		height:100px;
+	}
+	.iletisimmetin{
+	color:#F00; font-style:italic; font-size:26px; padding-top:30px;
+	}
+	.iletisimmetin2{
+	font-size:24px; padding-top:50px; ;
+	}
+	.iletisimfoto{
+		padding-top:50px; ;
+	}
+	.eposta{
+		font-size:18px; padding-top:75px; color:#F00; 
+	}	
+	.eposta2{
+		font-size:18px; padding-top:75px; 
+	}	
+	.harita{
+		padding-top:100px; display:block;
+	}	
+	.footer{
+		padding-top:50px; display:;
+	}
+	.footer2{
+		font-size:20px; padding-top:50px; display:block;
+	}
+	.altbilgi{
+	 	padding-top:50px; color:#FFF
+		}
+	

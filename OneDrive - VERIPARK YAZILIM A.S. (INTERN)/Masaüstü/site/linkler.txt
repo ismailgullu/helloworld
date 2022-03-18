@@ -1,0 +1,6 @@
+<a href="index.html" title="Home">Anasayfa</a><br>
+    <a href="#" title="projects">Projelerimiz</a><br>
+    <a href="#" title="about">Hakkýmýzda</a><br>
+    <a href="iletisim.html" title="contact">Ýletiþim</a><br>
+    <a href="#" title="instagram"><img src="https://png.icons8.com/color/30/000000/instagram-new.png"></a>
+    <a href="#" title="facebook"><img src="https://png.icons8.com/color/30/000000/facebook.png"></a>
